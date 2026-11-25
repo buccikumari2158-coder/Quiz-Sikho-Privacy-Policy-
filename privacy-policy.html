@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Quiz Sikho</title>
+  <style>
+    :root {
+      --bg: #f6fbf7;
+      --card: #ffffff;
+      --border: #d8eadc;
+      --text: #112217;
+      --muted: #4b6553;
+      --accent: #098a2e;
+      --accent-soft: #e7f8ec;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 28px 16px 64px;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 36px 28px;
+      box-shadow: 0 10px 30px rgba(9, 45, 20, 0.06);
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.82rem;
+      padding: 5px 12px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-bottom: 28px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 1.18rem;
+      font-weight: 800;
+      color: var(--accent);
+      margin-top: 26px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 12px;
+    }
+
+    ul {
+      margin: 8px 0 14px 22px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .callout {
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      padding: 14px 16px;
+      border-radius: 10px;
+      margin: 16px 0;
+      font-size: 0.95rem;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 32px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <span class="badge">Google Play Families &amp; Children's Privacy Compliant</span>
+    <h1>Privacy Policy for Quiz Sikho</h1>
+    <div class="meta">
+      <strong>Application:</strong> Quiz Sikho (<span style="font-family: monospace;">com.quizsikho.myapp</span>)<br />
+      <strong>Effective Date:</strong> November 25, 2026<br />
+      <strong>Developer Contact:</strong> <a href="mailto:barshanayaknayak916@gmail.com">barshanayaknayak916@gmail.com</a>
+    </div>
+
+    <p>
+      <strong>Quiz Sikho</strong> is an educational bilingual quiz application designed for children
+      (Nursery through Class 5, ages 3–10) and families. Protecting children's privacy is our top priority.
+      This Privacy Policy explains clearly what information the app uses, how it is stored, and how third-party
+      services operate inside the app.
+    </p>
+
+    <div class="callout">
+      <strong>Summary for Parents:</strong> Quiz Sikho does <strong>not</strong> require email registration,
+      does <strong>not</strong> upload your child's name, class, age, or quiz progress to cloud servers, and
+      strictly serves child-safe, non-personalized G-rated advertisements with Advertising ID collection disabled.
+    </div>
+
+    <h2>1. Information Stored Locally on Your Device</h2>
+    <p>
+      During onboarding and gameplay, the app allows the user to enter a display name/nickname, select a
+      school class (Nursery, LKG, UKG, or Class 1st–5th), choose an age bracket (3–5, 5–7, or 7–10), and pick
+      from 10 built-in illustrated avatars. This profile information, along with earned coins, diamonds, 5-level
+      streaks, completed/wrong level history, customizable question timer (5s, 10s, 20s, 30s, or 60s), sound
+      effects toggle, and language choice (English, Hindi, or Bilingual Default), is stored
+      <strong>strictly locally on the device</strong> using Android Jetpack DataStore and SharedPreferences.
+    </p>
+    <ul>
+      <li>We do <strong>not</strong> upload or transmit your child's name, class, age, avatar, or quiz scores to any external server or database.</li>
+      <li>Android cloud backup (<span style="font-family: monospace;">allowBackup="false"</span>) is disabled so personal profile preferences are not synced externally.</li>
+    </ul>
+
+    <h2>2. Firebase Anonymous Authentication, Cloud Quiz Content &amp; Offline Cache</h2>
+    <p>
+      Quiz Sikho uses <strong>Google Firebase Anonymous Authentication</strong> and <strong>Cloud Firestore</strong>
+      solely to fetch updated educational quiz questions and categories (<span style="font-family: monospace;">quiz_levels</span>)
+      published by the app administrator.
+    </p>
+    <ul>
+      <li>Anonymous Authentication generates a random, temporary technical session identifier without collecting any name, email address, phone number, or personal details.</li>
+      <li>No child profile information or gameplay progress is written to Firestore.</li>
+      <li>Once quiz questions are synced online, the Firestore SDK keeps a local offline cache on the device so previously loaded quiz levels remain playable when the device is temporarily offline.</li>
+      <li>Google Firebase Analytics collection and Advertising ID analytics collection are explicitly deactivated in the app configuration.</li>
+    </ul>
+
+    <h2>3. Advertising &amp; Children's Privacy (COPPA / Google Play Families Policy)</h2>
+    <p>
+      Quiz Sikho displays banner and occasional level-transition interstitial ads using <strong>Google AdMob</strong>
+      in strict compliance with the <strong>Google Play Families Policy</strong> and COPPA:
+    </p>
+    <ul>
+      <li><strong>Child-Directed Treatment:</strong> The AdMob SDK is initialized with <span style="font-family: monospace;">TAG_FOR_CHILD_DIRECTED_TREATMENT_TRUE</span> and <span style="font-family: monospace;">TAG_FOR_UNDER_AGE_OF_CONSENT_TRUE</span>.</li>
+      <li><strong>G-Rated Content Only:</strong> Maximum ad content rating is restricted to <strong>G (General Audiences)</strong>.</li>
+      <li><strong>Non-Personalized Ads Only:</strong> Every ad request explicitly passes <span style="font-family: monospace;">npa=1</span> (non-personalized ads), disabling behavioral targeting and interest-based profiling.</li>
+      <li><strong>No Advertising ID Collection:</strong> The Android <span style="font-family: monospace;">AD_ID</span> permission and Privacy Sandbox AdServices tracking permissions (<span style="font-family: monospace;">ACCESS_ADSERVICES_AD_ID</span>, <span style="font-family: monospace;">ACCESS_ADSERVICES_ATTRIBUTION</span>, <span style="font-family: monospace;">ACCESS_ADSERVICES_TOPICS</span>) are removed from the app manifest.</li>
+    </ul>
+    <p>
+      For more information on how Google handles data in child-directed AdMob requests, please review
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.
+    </p>
+
+    <h2>4. Educational Question Images</h2>
+    <p>
+      Some quiz questions load educational illustrations over HTTPS (including automatic upgrade of image URLs to HTTPS)
+      from static image hosting links (such as ImgBB <span style="font-family: monospace;">i.ibb.co</span>). Image
+      requests fetch only the picture resource itself and do not send personal user identifiers or tracking data.
+    </p>
+
+    <h2>5. Device Permissions</h2>
+    <p>Quiz Sikho declares only minimal install-time permissions needed for network quiz loading and child-safe ads:</p>
+    <ul>
+      <li><span style="font-family: monospace;">INTERNET</span> &amp; <span style="font-family: monospace;">ACCESS_NETWORK_STATE</span> (for syncing quiz questions and displaying non-personalized family-safe ads)</li>
+      <li>Standard Google Play Services technical permissions (<span style="font-family: monospace;">WAKE_LOCK</span>, <span style="font-family: monospace;">READ_GSERVICES</span>) merged by the Firebase/AdMob SDKs</li>
+      <li><span style="font-family: monospace;">AD_ID</span>, Privacy Sandbox AdServices permissions, and <span style="font-family: monospace;">FOREGROUND_SERVICE</span> are explicitly removed from the app manifest.</li>
+    </ul>
+    <p>
+      The app requests <strong>zero dangerous runtime permissions</strong> and does <strong>not</strong> access your
+      camera, microphone, location, contacts, phone state, or external photo/file storage.
+    </p>
+
+    <h2>6. Parental Controls &amp; Data Deletion</h2>
+    <p>
+      Because all child profile details and progress are stored locally on the device and never collected on our servers:
+    </p>
+    <ul>
+      <li>Parents or guardians can edit the child's display name, class, age group, avatar, language, sound, or timer settings anytime inside the app's <strong>Settings</strong> screen.</li>
+      <li>To permanently delete all local profile data, coins, diamonds, and level history, simply clear the app's storage in Android device settings or uninstall <strong>Quiz Sikho</strong>, or contact us at <a href="mailto:barshanayaknayak916@gmail.com">barshanayaknayak916@gmail.com</a> for assistance.</li>
+    </ul>
+
+    <h2>7. Changes to This Privacy Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time if app features or legal requirements change. Any updates
+      will be posted on this page with a revised Effective Date.
+    </p>
+
+    <h2>8. Contact Us</h2>
+    <p>
+      If you are a parent, guardian, or reviewer with questions or concerns about children's privacy or this policy,
+      please contact us at:
+    </p>
+    <ul>
+      <li><strong>Developer Contact Email:</strong> <a href="mailto:barshanayaknayak916@gmail.com">barshanayaknayak916@gmail.com</a></li>
+    </ul>
+
+    <footer>
+      &copy; 2026 Quiz Sikho. All rights reserved.
+    </footer>
+  </main>
+</body>
+</html>
